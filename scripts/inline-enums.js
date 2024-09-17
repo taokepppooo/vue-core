@@ -23,6 +23,7 @@ import * as path from 'node:path'
 import { parse } from '@babel/parser'
 import { spawnSync } from 'node:child_process'
 import MagicString from 'magic-string'
+import cons from '@vue/consolidate'
 
 /**
  * @typedef {{ readonly name: string, readonly value: string | number }} EnumMember
