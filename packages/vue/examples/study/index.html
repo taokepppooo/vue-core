@@ -1,28 +1,22 @@
 <script src="../../dist/vue.global.js"></script>
 
 
-<div id="app">
-  <h1>Counter</h1>
+<!-- <div id="app">
+  <h1>
+    <div>Counter</div>
+  </h1>
   <p>{{ count }}</p>
   <button @click="count++">Increment</button>
-</div>
-<!-- <div id="app2">
+</div> -->
+<div id="app2">
   <h1>Counter2</h1>
   <p>{{ count }}</p>
   <button @click="count++">Increment</button>
 </div>
-<div id="hostElement"></div> -->
+<!-- <div id="hostElement"></div> -->
 
 <script>
   const { createApp, ref } = Vue
-
-  createApp({
-    setup() {
-      const count = ref(0)
-
-      return { count }
-    },
-  }).mount(document.getElementById('app'))
 
   // createApp({
   //   setup() {
@@ -30,7 +24,15 @@
 
   //     return { count }
   //   },
-  // }).mount('#app2')
+  // }).mount(document.getElementById('app'))
+
+  createApp({
+    setup() {
+      const count = ref(0)
+
+      return { count }
+    },
+  }).mount('#app2')
 
   // const hostElement = document.getElementById('hostElement')
   // const shadowRoot = hostElement.attachShadow({ mode: 'open' })
