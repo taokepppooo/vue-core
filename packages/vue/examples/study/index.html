@@ -1,6 +1,5 @@
 <script src="../../dist/vue.global.js"></script>
 
-
 <!-- <div id="app">
   <h1>
     <div>Counter</div>
@@ -9,9 +8,14 @@
   <button @click="count++">Increment</button>
 </div> -->
 <div id="app2">
-  <h1>Counter2</h1>
-  <p>{{ count }}</p>
-  <button @click="count++">Increment</button>
+  <div>
+    <h1>Counter2</h1>
+    <p>{{ count }}</p>
+    <div v-if="count">showCount</div>
+    <button @click="count++">Increment</button>
+    <button @click="count--">Decrement</button>
+  </div>
+  <div>222</div>
 </div>
 <!-- <div id="hostElement"></div> -->
 
